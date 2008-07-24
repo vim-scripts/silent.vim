@@ -8,24 +8,27 @@ endif
 
 let g:colors_name = "silent"
 
-hi Cursor  guifg=DarkGrey guibg=grey gui=NONE
-hi LineNr ctermbg=DarkGrey ctermfg=LightGrey gui=bold,italic guifg=DarkGray guibg=#F1FFC1
-hi StatusLineNC gui=bold,italic guifg=White guibg=DimGray
-hi StatusLine   guifg=#DDDDDD guibg=#1D343B gui=italic
-hi SpecialKey gui=none guifg=orange
-hi Title gui=bold guifg=Black 
-hi CursorLine guibg=#fafafa
-hi CursorColumn guibg=#fafafa
-hi MatchParen ctermbg=LightGrey guifg=#141312 guibg=Yellow gui=underline
+hi Cursor           guifg=DarkGrey guibg=grey gui=NONE
+hi LineNr           ctermbg=DarkGrey ctermfg=LightGrey gui=bold,italic guifg=DarkGray guibg=#F1FFC1
+hi StatusLineNC     ctermbg=white  ctermfg=black guifg=White guibg=DimGray gui=bold,italic
+hi StatusLine       ctermbg=white  ctermfg=black guifg=#DDDDDD guibg=#1D343B gui=italic
+hi SpecialKey       guifg=orange gui=none
+hi Title            guifg=Black   gui=bold 
+hi CursorLine       guibg=#fafafa
+hi CursorColumn     guibg=#fafafa
+hi MatchParen       ctermbg=LightGrey guifg=#141312 guibg=Yellow gui=underline
+hi AutoHiGroup      guibg=Yellow 
 
-hi FoldColumn gui=none guifg=Black guibg=#F1FFC1
-hi VertSplit gui=none guifg=White guibg=DimGray
-hi Wildmenu gui=bold guifg=Black guibg=White
+hi Directory	    ctermbg=White ctermfg=DarkGray gui=bold,italic guifg=DarkGray guibg=#F1FFC1
+hi FoldColumn       guifg=Black guibg=#F1FFC1 gui=none 
+hi VertSplit        guifg=White guibg=DimGray gui=none 
+hi Wildmenu         guifg=Black guibg=White gui=bold 
 
-hi Pmenu guibg=#DDDDDD guifg=Black gui=italic
-hi PmenuSbar guibg=#DDDDDD guifg=fg gui=italic
-hi PmenuSel guibg=#F1FFC1 guifg=Black gui=italic
-hi PmenuThumb guibg=#DDDDDD guifg=fg gui=none
+
+hi Pmenu            ctermbg=white guibg=#DDDDDD guifg=Black gui=italic
+hi PmenuSbar        ctermbg=white guibg=#DDDDDD guifg=fg gui=italic
+hi PmenuSel         ctermbg=Blue  ctermfg=white  guibg=#F1FFC1 guifg=Black gui=italic
+hi PmenuThumb       ctermbg=white ctermfg=white guibg=#DDDDDD guifg=fg gui=none
 
 hi IncSearch        ctermbg=White     ctermfg=Yellow  gui=none guifg=White guibg=Black
 hi Search           ctermbg=DarkBlue ctermfg=white   gui=none guifg=Black guibg=Yellow
@@ -38,9 +41,10 @@ hi Constant	        ctermfg=DarkGrey guifg=#141312 gui=bold
 hi Charachter	    ctermfg=Yellow guifg=#644A9B	gui=NONE
 hi String           ctermfg=DarkRed guifg=#BF0303	gui=italic
 hi Number	        ctermfg=DarkRed  guifg=#B07E00 gui=NONE
-hi Boolean	        ctermfg=Cyan guifg=#B07E00	gui=NONE
+hi Boolean	        ctermfg=DarkBlue guifg=#B07E00	gui=NONE
 hi Special	        ctermfg=DarkRed	guifg=#9C0D0D gui=NONE
 hi Define	        ctermfg=DarkGreen guifg=#006E26 gui=bold
+
 " vars
 hi Identifier 	    ctermfg=DarkBlue guifg=#0057AE gui=NONE
 hi Exception 	    ctermfg=DarkBlue guifg=black gui=bold
@@ -54,7 +58,7 @@ hi Repeat	        ctermfg=DarkBlue guifg=#B07E00 gui=bold
 hi Operator	        ctermfg=DarkBlue guifg=#0057AE gui=NONE
 hi Ignore	        ctermfg=DarkBlue guifg=bg
 hi Folded           ctermbg=LightYellow ctermfg=Gray guibg=#F1FFC1 guifg=#101010 gui=italic
-hi Error	        term=reverse ctermbg=White ctermfg=Red guibg=#D80000 guifg=#FFD1CC gui=NONE
+hi Error	        term=reverse ctermbg=Red ctermfg=White guibg=#D80000 guifg=#FFD1CC gui=NONE
 hi Todo		        term=standout ctermbg=Yellow ctermfg=DarkGrey guifg=Grey guibg=#AD5500 gui=NONE
 hi Done		        term=standout ctermbg=Gray ctermfg=White guifg=#CCEEFF guibg=Gray gui=NONE
 
@@ -67,7 +71,7 @@ hi NonText          guifg=#CCCCCC gui=NONE
 hi DiffDelete       guifg=#FFD1CC gui=NONE
 hi DiffText         guifg=#CCC gui=NONE
 hi Question         guifg=black gui=bold
-hi link String	Constant
+hi link String	Constant 
 hi link Character	Constant
 hi link Number		Constant
 hi link Boolean	Constant
