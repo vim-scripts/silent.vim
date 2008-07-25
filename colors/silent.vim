@@ -7,6 +7,7 @@ if exists("syntax_on")
 endif
 
 let g:colors_name = "silent"
+set background=light
 
 hi Cursor           guifg=DarkGrey guibg=grey gui=NONE
 hi LineNr           ctermbg=DarkGrey ctermfg=LightGrey gui=bold,italic guifg=DarkGray guibg=#F1FFC1
@@ -67,9 +68,12 @@ hi SpellErrors      ctermfg=DarkRed guifg=#9C0D0D gui=NONE
 hi MoreMsg          guifg=black gui=NONE
 hi ModeMsg          guifg=black gui=NONE
 hi Title            gui=bold
-hi NonText          guifg=#CCCCCC gui=NONE
-hi DiffDelete       guifg=#FFD1CC gui=NONE
-hi DiffText         guifg=#CCC gui=NONE
+hi NonText          guibg=#CCCCCC guifg=NONE gui=NONE
+hi DiffAdd          guifg=NONE guibg=#CCFFCC gui=NONE
+hi DiffDelete       guifg=NONE guibg=#FFCCCC gui=NONE
+hi DiffChange       guifg=NONE guibg=#F1FFC1 gui=NONE
+hi DiffText         guibg=#ffffff guifg=NONE gui=NONE
+
 hi Question         guifg=black gui=bold
 hi link String	Constant 
 hi link Character	Constant
