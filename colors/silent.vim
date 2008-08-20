@@ -58,7 +58,7 @@ hi Function	        ctermfg=DarkBlue guifg=#B07E00 gui=NONE
 hi Repeat	        ctermfg=DarkBlue guifg=#B07E00 gui=bold
 hi Operator	        ctermfg=DarkBlue guifg=#0057AE gui=NONE
 hi Ignore	        ctermfg=DarkBlue guifg=bg
-hi Folded           ctermbg=LightYellow ctermfg=Gray guibg=#F1FFC1 guifg=#101010 gui=italic
+hi Folded           ctermbg=Grey ctermfg=White guibg=#F1FFC1 guifg=#101010 gui=italic
 hi Error	        term=reverse ctermbg=Red ctermfg=White guibg=#D80000 guifg=#FFD1CC gui=NONE
 hi Todo		        term=standout ctermbg=Yellow ctermfg=DarkGrey guifg=Grey guibg=#AD5500 gui=NONE
 hi Done		        term=standout ctermbg=Gray ctermfg=White guifg=#CCEEFF guibg=Gray gui=NONE
@@ -68,11 +68,11 @@ hi SpellErrors      ctermfg=DarkRed guifg=#9C0D0D gui=NONE
 hi MoreMsg          guifg=black gui=NONE
 hi ModeMsg          guifg=black gui=NONE
 hi Title            gui=bold
-hi NonText          guibg=#CCCCCC guifg=NONE gui=NONE
-hi DiffAdd          guifg=NONE guibg=#CCFFCC gui=NONE
-hi DiffDelete       guifg=NONE guibg=#FFCCCC gui=NONE
-hi DiffChange       guifg=NONE guibg=#F1FFC1 gui=NONE
-hi DiffText         guibg=#ffffff guifg=NONE gui=NONE
+hi NonText          ctermfg=black ctermbg=white guibg=#FFFFFF guifg=black gui=NONE
+hi DiffAdd          ctermfg=white ctermbg=blue guifg=NONE guibg=#CCFFCC gui=NONE
+hi DiffDelete       ctermfg=red  ctermbg=white guifg=NONE guibg=#FFCCCC gui=NONE
+hi DiffChange       ctermfg=white ctermbg=red guifg=NONE guibg=#F1FFC1 gui=NONE
+hi DiffText         ctermfg=black ctermbg=white guibg=#ffffff guifg=NONE gui=NONE
 
 hi Question         guifg=black gui=bold
 hi link String	Constant 
