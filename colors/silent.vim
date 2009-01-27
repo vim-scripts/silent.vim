@@ -9,14 +9,14 @@ endif
 let g:colors_name = "silent"
 set background=light
 
-hi Cursor           guibg=grey guifg=DarkGrey gui=NONE
+hi Cursor           guibg=#0057ae guifg=white gui=NONE
 hi LineNr           guibg=#F1FFC1 guifg=DarkGray gui=bold,italic 
 hi StatusLineNC     guibg=LightGrey guifg=White gui=bold,italic
 hi StatusLine       guibg=#1D343B guifg=#DDDDDD gui=italic
 hi Title            guibg=white guifg=Black   gui=bold 
 hi TablineSel       guibg=white guifg=Black   gui=bold 
-hi CursorLine       guibg=#F6FFD7 guifg=white gui=none
-hi CursorColumn     guibg=#fafafa guifg=white gui=NONE
+hi CursorLine       guibg=#F6FFD7 guifg=black gui=none
+hi CursorColumn     guibg=#fafafa guifg=black gui=NONE
 hi MatchParen       guifg=#141312 guibg=Yellow gui=underline
 hi AutoHiGroup      guibg=Yellow guifg=black
 
